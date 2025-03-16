@@ -1,0 +1,218 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/andressamachado/Desktop/repos/MyToDoApp/MyToDoApp.Application/MyToDoApp.Application.csproj": {}
+  },
+  "projects": {
+    "/Users/andressamachado/Desktop/repos/MyToDoApp/MyToDoApp.Application/MyToDoApp.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/andressamachado/Desktop/repos/MyToDoApp/MyToDoApp.Application/MyToDoApp.Application.csproj",
+        "projectName": "MyToDoApp.Application",
+        "projectPath": "/Users/andressamachado/Desktop/repos/MyToDoApp/MyToDoApp.Application/MyToDoApp.Application.csproj",
+        "packagesPath": "/Users/andressamachado/.nuget/packages/",
+        "outputPath": "/Users/andressamachado/Desktop/repos/MyToDoApp/MyToDoApp.Application/obj/",
+        "projectStyle": "PackageReference",
+        "centralPackageVersionsManagementEnabled": true,
+        "CentralPackageTransitivePinningEnabled": true,
+        "configFilePaths": [
+          "/Users/andressamachado/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/andressamachado/Desktop/repos/MyToDoApp/MyToDoApp.Domain/MyToDoApp.Domain.csproj": {
+                "projectPath": "/Users/andressamachado/Desktop/repos/MyToDoApp/MyToDoApp.Domain/MyToDoApp.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "centralPackageVersions": {
+            "AsyncFixer": "1.6.0",
+            "Asyncify": "0.9.7",
+            "AutoFixture": "4.18.1",
+            "AutoFixture.AutoMoq": "4.18.1",
+            "AutoFixture.NUnit3": "4.18.1",
+            "EFCoreSecondLevelCacheInterceptor": "5.2.1",
+            "EFCoreSecondLevelCacheInterceptor.EasyCaching.Core": "5.2.1",
+            "EntityFrameworkCore.Exceptions.PostgreSQL": "8.1.3",
+            "FluentAssertions": "6.12.2",
+            "FluentValidation": "11.11.0",
+            "FluentValidation.DependencyInjectionExtensions": "11.11.0",
+            "LinqKit": "1.3.6",
+            "MediatR": "12.4.1",
+            "Meziantou.Analyzer": "2.0.180",
+            "Microsoft.EntityFrameworkCore.Design": "9.0.2",
+            "Microsoft.EntityFrameworkCore.Relational": "9.0.2",
+            "Microsoft.VisualStudio.Threading.Analyzers": "17.12.19",
+            "Moq": "4.20.72",
+            "Moq.EntityFrameworkCore": "9.0.0.1",
+            "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.2",
+            "NUnit": "4.3.2",
+            "NUnit.Analyzers": "4.4.0",
+            "NUnit3TestAdapter": "5.0.0",
+            "Serilog.AspNetCore": "8.0.3",
+            "Serilog.Enrichers.ClientInfo": "2.1.2",
+            "Serilog.Enrichers.Environment": "3.0.1",
+            "Serilog.Enrichers.Process": "3.0.0",
+            "Serilog.Enrichers.Thread": "4.0.0",
+            "Serilog.Sinks.Async": "2.1.0",
+            "SerilogAnalyzer": "0.15.0",
+            "SharpGrip.FluentValidation.AutoValidation.Mvc": "1.1.0",
+            "SmartanAlyzers.ExceptionAnalyzer": "1.0.10",
+            "SonarAnalyzer.CSharp": "9.32.0.97167",
+            "Swashbuckle.AspNetCore": "7.0.0",
+            "Swashbuckle.AspNetCore.Filters": "8.0.2",
+            "System.IdentityModel.Tokens.Jwt": "8.2.1",
+            "System.IO.Compression.ZipFile": "4.3.0",
+            "System.IO.Pipelines": "9.0.2",
+            "Testcontainers.PostgreSql": "4.0.0"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200-preview.0.24611.4/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/andressamachado/Desktop/repos/MyToDoApp/MyToDoApp.Domain/MyToDoApp.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/andressamachado/Desktop/repos/MyToDoApp/MyToDoApp.Domain/MyToDoApp.Domain.csproj",
+        "projectName": "MyToDoApp.Domain",
+        "projectPath": "/Users/andressamachado/Desktop/repos/MyToDoApp/MyToDoApp.Domain/MyToDoApp.Domain.csproj",
+        "packagesPath": "/Users/andressamachado/.nuget/packages/",
+        "outputPath": "/Users/andressamachado/Desktop/repos/MyToDoApp/MyToDoApp.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "centralPackageVersionsManagementEnabled": true,
+        "CentralPackageTransitivePinningEnabled": true,
+        "configFilePaths": [
+          "/Users/andressamachado/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "centralPackageVersions": {
+            "AsyncFixer": "1.6.0",
+            "Asyncify": "0.9.7",
+            "AutoFixture": "4.18.1",
+            "AutoFixture.AutoMoq": "4.18.1",
+            "AutoFixture.NUnit3": "4.18.1",
+            "EFCoreSecondLevelCacheInterceptor": "5.2.1",
+            "EFCoreSecondLevelCacheInterceptor.EasyCaching.Core": "5.2.1",
+            "EntityFrameworkCore.Exceptions.PostgreSQL": "8.1.3",
+            "FluentAssertions": "6.12.2",
+            "FluentValidation": "11.11.0",
+            "FluentValidation.DependencyInjectionExtensions": "11.11.0",
+            "LinqKit": "1.3.6",
+            "MediatR": "12.4.1",
+            "Meziantou.Analyzer": "2.0.180",
+            "Microsoft.EntityFrameworkCore.Design": "9.0.2",
+            "Microsoft.EntityFrameworkCore.Relational": "9.0.2",
+            "Microsoft.VisualStudio.Threading.Analyzers": "17.12.19",
+            "Moq": "4.20.72",
+            "Moq.EntityFrameworkCore": "9.0.0.1",
+            "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.2",
+            "NUnit": "4.3.2",
+            "NUnit.Analyzers": "4.4.0",
+            "NUnit3TestAdapter": "5.0.0",
+            "Serilog.AspNetCore": "8.0.3",
+            "Serilog.Enrichers.ClientInfo": "2.1.2",
+            "Serilog.Enrichers.Environment": "3.0.1",
+            "Serilog.Enrichers.Process": "3.0.0",
+            "Serilog.Enrichers.Thread": "4.0.0",
+            "Serilog.Sinks.Async": "2.1.0",
+            "SerilogAnalyzer": "0.15.0",
+            "SharpGrip.FluentValidation.AutoValidation.Mvc": "1.1.0",
+            "SmartanAlyzers.ExceptionAnalyzer": "1.0.10",
+            "SonarAnalyzer.CSharp": "9.32.0.97167",
+            "Swashbuckle.AspNetCore": "7.0.0",
+            "Swashbuckle.AspNetCore.Filters": "8.0.2",
+            "System.IdentityModel.Tokens.Jwt": "8.2.1",
+            "System.IO.Compression.ZipFile": "4.3.0",
+            "System.IO.Pipelines": "9.0.2",
+            "Testcontainers.PostgreSql": "4.0.0"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200-preview.0.24611.4/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

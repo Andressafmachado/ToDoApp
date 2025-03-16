@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "SEHPIjNgcbM=",
+  "success": true,
+  "projectFilePath": "/Users/andressamachado/Desktop/repos/MyToDoApp/MyToDoApp.Presentation/MyToDoApp.Presentation.csproj",
+  "expectedPackageFiles": [
+    "/Users/andressamachado/.nuget/packages/microsoft.aspnetcore.openapi/9.0.0/microsoft.aspnetcore.openapi.9.0.0.nupkg.sha512",
+    "/Users/andressamachado/.nuget/packages/microsoft.openapi/1.6.17/microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}

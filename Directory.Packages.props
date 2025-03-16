@@ -1,0 +1,72 @@
+<Project>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <CentralPackageTransitivePinningEnabled>true</CentralPackageTransitivePinningEnabled>
+    <EnablePackageVersionOverride>false</EnablePackageVersionOverride>
+    <MicrosoftPackagesVersion>9.0.2</MicrosoftPackagesVersion>
+  </PropertyGroup>
+  <!-- Packages -->
+  <ItemGroup>
+    <!-- Fluent Validation -->
+    <PackageVersion Include="FluentValidation" Version="11.11.0" />
+    <PackageVersion Include="FluentValidation.DependencyInjectionExtensions" Version="11.11.0" />
+    <PackageVersion Include="SharpGrip.FluentValidation.AutoValidation.Mvc" Version="1.1.0" />
+    <!-- Mediator -->
+    <PackageVersion Include="MediatR" Version="12.4.1" />
+    <!-- Microsoft -->
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Relational" Version="$(MicrosoftPackagesVersion)" />
+    <PackageVersion Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="$(MicrosoftPackagesVersion)" />
+    <PackageVersion Include="EntityFrameworkCore.Exceptions.PostgreSQL" Version="8.1.3" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Design" Version="$(MicrosoftPackagesVersion)">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageVersion>
+    <!-- Serilog -->
+    <PackageVersion Include="Serilog.AspNetCore" Version="8.0.3" />
+    <PackageVersion Include="Serilog.Enrichers.ClientInfo" Version="2.1.2" />
+    <PackageVersion Include="Serilog.Enrichers.Environment" Version="3.0.1" />
+    <PackageVersion Include="Serilog.Enrichers.Process" Version="3.0.0" />
+    <PackageVersion Include="Serilog.Enrichers.Thread" Version="4.0.0" />
+    <PackageVersion Include="Serilog.Sinks.Async" Version="2.1.0" />
+    <!-- System based -->
+    <PackageVersion Include="System.IdentityModel.Tokens.Jwt" Version="8.2.1" />
+    <PackageVersion Include="System.IO.Compression.ZipFile" Version="4.3.0" />
+    <PackageVersion Include="System.IO.Pipelines" Version="$(MicrosoftPackagesVersion)" />
+    <!-- Swagger -->
+    <PackageVersion Include="Swashbuckle.AspNetCore" Version="7.0.0" />
+    <PackageVersion Include="Swashbuckle.AspNetCore.Filters" Version="8.0.2" />
+    <!-- Utilities -->
+    <PackageVersion Include="EFCoreSecondLevelCacheInterceptor" Version="5.2.1" />
+	<PackageVersion Include="EFCoreSecondLevelCacheInterceptor.EasyCaching.Core" Version="5.2.1" />
+    <PackageVersion Include="LinqKit" Version="1.3.6" />
+  </ItemGroup>
+  <!-- Analyzers -->
+  <ItemGroup>
+    <PackageVersion Include="AsyncFixer" Version="1.6.0" />
+    <PackageVersion Include="Asyncify" Version="0.9.7" />
+    <PackageVersion Include="Meziantou.Analyzer" Version="2.0.180">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageVersion>
+    <PackageVersion Include="Microsoft.VisualStudio.Threading.Analyzers" Version="17.12.19">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageVersion>
+    <PackageVersion Include="SerilogAnalyzer" Version="0.15.0" />
+    <PackageVersion Include="SmartanAlyzers.ExceptionAnalyzer" Version="1.0.10" />
+    <PackageVersion Include="SonarAnalyzer.CSharp" Version="9.32.0.97167" />
+  </ItemGroup>
+  <!-- Test -->
+  <ItemGroup>
+    <PackageVersion Include="AutoFixture" Version="4.18.1" />
+    <PackageVersion Include="AutoFixture.AutoMoq" Version="4.18.1" />
+    <PackageVersion Include="AutoFixture.NUnit3" Version="4.18.1" />
+    <PackageVersion Include="FluentAssertions" Version="6.12.2" />
+    <PackageVersion Include="Moq" Version="4.20.72" />
+    <PackageVersion Include="Moq.EntityFrameworkCore" Version="9.0.0.1" />
+    <PackageVersion Include="NUnit" Version="4.3.2" />
+    <PackageVersion Include="NUnit3TestAdapter" Version="5.0.0" />
+    <PackageVersion Include="NUnit.Analyzers" Version="4.4.0" />
+    <PackageVersion Include="Testcontainers.PostgreSql" Version="4.0.0" />
+  </ItemGroup>
+</Project>

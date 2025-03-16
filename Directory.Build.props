@@ -1,0 +1,13 @@
+<Project>
+	<PropertyGroup>
+		<LangVersion>preview</LangVersion>
+		<AssemblyName>$(MSBuildProjectName)</AssemblyName>
+		<RootNamespace>$(MSBuildProjectName)</RootNamespace>
+
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+		<NoWarn>$(NoWarn);1591;MA0004;MA0011;MA0016;MA0026;MA0048;MA0049;MA0051;EX002;</NoWarn>
+	</PropertyGroup>
+</Project>
