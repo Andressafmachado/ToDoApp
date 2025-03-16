@@ -9,8 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyToDoApp.Application", "My
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyToDoApp.Infrastructure", "MyToDoApp.Infrastructure\MyToDoApp.Infrastructure.csproj", "{ED2C9FEF-7943-4A07-9AF0-72856FB1F287}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyToDoApp.Presentation", "MyToDoApp.Presentation\MyToDoApp.Presentation.csproj", "{FAFF4F08-6590-4131-90C6-2B8183F6C74B}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{09970462-E885-4C61-BDB1-6AD9D745C165}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6B48AC5B-A138-406D-A246-92AB7A654926}"
@@ -18,6 +16,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Directory.Build.props = Directory.Build.props
 		Directory.Packages.props = Directory.Packages.props
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyToDoApp.API", "MyToDoApp.API\MyToDoApp.API.csproj", "{AC8E9B89-CD2A-4115-B553-E11274830134}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -40,15 +40,15 @@ Global
 		{ED2C9FEF-7943-4A07-9AF0-72856FB1F287}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED2C9FEF-7943-4A07-9AF0-72856FB1F287}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED2C9FEF-7943-4A07-9AF0-72856FB1F287}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FAFF4F08-6590-4131-90C6-2B8183F6C74B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FAFF4F08-6590-4131-90C6-2B8183F6C74B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FAFF4F08-6590-4131-90C6-2B8183F6C74B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FAFF4F08-6590-4131-90C6-2B8183F6C74B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC8E9B89-CD2A-4115-B553-E11274830134}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC8E9B89-CD2A-4115-B553-E11274830134}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC8E9B89-CD2A-4115-B553-E11274830134}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC8E9B89-CD2A-4115-B553-E11274830134}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{B091C03A-B5D1-4AB0-B4F3-732AC2DB4318} = {09970462-E885-4C61-BDB1-6AD9D745C165}
 		{F587F5C6-8728-4F03-B64D-B4EB7EA367F2} = {09970462-E885-4C61-BDB1-6AD9D745C165}
 		{ED2C9FEF-7943-4A07-9AF0-72856FB1F287} = {09970462-E885-4C61-BDB1-6AD9D745C165}
-		{FAFF4F08-6590-4131-90C6-2B8183F6C74B} = {09970462-E885-4C61-BDB1-6AD9D745C165}
+		{AC8E9B89-CD2A-4115-B553-E11274830134} = {09970462-E885-4C61-BDB1-6AD9D745C165}
 	EndGlobalSection
 EndGlobal

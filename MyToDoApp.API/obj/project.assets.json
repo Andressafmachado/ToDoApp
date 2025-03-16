@@ -33,42 +33,6 @@
             "related": ".pdb;.xml"
           }
         }
-      },
-      "MyToDoApp.Application/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v9.0",
-        "dependencies": {
-          "MyToDoApp.Domain": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/MyToDoApp.Application.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/MyToDoApp.Application.dll": {}
-        }
-      },
-      "MyToDoApp.Domain/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v9.0",
-        "compile": {
-          "bin/placeholder/MyToDoApp.Domain.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/MyToDoApp.Domain.dll": {}
-        }
-      },
-      "MyToDoApp.Infrastructure/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v9.0",
-        "dependencies": {
-          "MyToDoApp.Application": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/MyToDoApp.Infrastructure.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/MyToDoApp.Infrastructure.dll": {}
-        }
       }
     }
   },
@@ -103,27 +67,11 @@
         "microsoft.openapi.1.6.17.nupkg.sha512",
         "microsoft.openapi.nuspec"
       ]
-    },
-    "MyToDoApp.Application/1.0.0": {
-      "type": "project",
-      "path": "../MyToDoApp.Application/MyToDoApp.Application.csproj",
-      "msbuildProject": "../MyToDoApp.Application/MyToDoApp.Application.csproj"
-    },
-    "MyToDoApp.Domain/1.0.0": {
-      "type": "project",
-      "path": "../MyToDoApp.Domain/MyToDoApp.Domain.csproj",
-      "msbuildProject": "../MyToDoApp.Domain/MyToDoApp.Domain.csproj"
-    },
-    "MyToDoApp.Infrastructure/1.0.0": {
-      "type": "project",
-      "path": "../MyToDoApp.Infrastructure/MyToDoApp.Infrastructure.csproj",
-      "msbuildProject": "../MyToDoApp.Infrastructure/MyToDoApp.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "Microsoft.AspNetCore.OpenApi >= 9.0.0",
-      "MyToDoApp.Infrastructure >= 1.0.0"
+      "Microsoft.AspNetCore.OpenApi >= 9.0.0"
     ]
   },
   "packageFolders": {
@@ -132,11 +80,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/andressamachado/Desktop/repos/MyToDoApp/MyToDoApp.Presentation/MyToDoApp.Presentation.csproj",
-      "projectName": "MyToDoApp.Presentation",
-      "projectPath": "/Users/andressamachado/Desktop/repos/MyToDoApp/MyToDoApp.Presentation/MyToDoApp.Presentation.csproj",
+      "projectUniqueName": "/Users/andressamachado/Desktop/repos/MyToDoApp/MyToDoApp.API/MyToDoApp.API.csproj",
+      "projectName": "MyToDoApp.API",
+      "projectPath": "/Users/andressamachado/Desktop/repos/MyToDoApp/MyToDoApp.API/MyToDoApp.API.csproj",
       "packagesPath": "/Users/andressamachado/.nuget/packages/",
-      "outputPath": "/Users/andressamachado/Desktop/repos/MyToDoApp/MyToDoApp.Presentation/obj/",
+      "outputPath": "/Users/andressamachado/Desktop/repos/MyToDoApp/MyToDoApp.API/obj/",
       "projectStyle": "PackageReference",
       "centralPackageVersionsManagementEnabled": true,
       "CentralPackageTransitivePinningEnabled": true,
@@ -152,11 +100,7 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {
-            "/Users/andressamachado/Desktop/repos/MyToDoApp/MyToDoApp.Infrastructure/MyToDoApp.Infrastructure.csproj": {
-              "projectPath": "/Users/andressamachado/Desktop/repos/MyToDoApp/MyToDoApp.Infrastructure/MyToDoApp.Infrastructure.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
