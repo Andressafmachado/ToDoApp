@@ -1,6 +1,1 @@
-namespace MyToDoApp.Application;
-
-public class GlobalUsings
-{
-    
-}
+global using ToDoEntity = MyToDoApp.Domain.Models.ToDo;

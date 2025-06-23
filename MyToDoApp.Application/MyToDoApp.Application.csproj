@@ -8,7 +8,14 @@
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <RootNamespace>MyApp.Application</RootNamespace>
+    <RootNamespace>MyToDoApp.Application</RootNamespace>
   </PropertyGroup>
-
+  
+    <ItemGroup>		
+        <PackageReference Include="EFCoreSecondLevelCacheInterceptor"/>
+        <PackageReference Include="EFCoreSecondLevelCacheInterceptor.EasyCaching.Core" />
+        <PackageReference Include="LinqKit"/>
+        <PackageReference Include="MediatR"/>
+        <PackageReference Include="FluentValidation"/>
+    </ItemGroup>
 </Project>

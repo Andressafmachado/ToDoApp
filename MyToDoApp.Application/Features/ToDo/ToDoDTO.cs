@@ -1,9 +1,15 @@
-namespace AIHR.LMS.Application.Features.Category;
+namespace MyToDoApp.Application.Features.ToDo;
 
-public readonly record struct CategoryDTO(int Id, string ShortName, string FullName)
+public readonly record struct ToDoDTO(int Id, string Description, string Title, int Priority, int? ParentToDoId, string Auth0UserId, List<ToDoDTO>? SubTodos)
 {
-	public static CategoryDTO Map(CategoryEntity entity)
-	{
-		return new(entity.Id, entity.ShortName, entity.FullName);
-	}
+	public static ToDoDTO Map(ToDoEntity entity)
+    {
+        return new(entity.Id,
+            entity.Description,
+            entity.Title,
+            entity.Priority,
+            entity.ParentToDoId,
+            entity.Auth0UserId,
+            entity.SubTodos?.Select(Map).ToList());
+    }
 }

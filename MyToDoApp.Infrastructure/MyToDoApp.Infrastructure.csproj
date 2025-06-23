@@ -4,6 +4,18 @@
     <ProjectReference Include="..\MyToDoApp.Application\MyToDoApp.Application.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Data\Migrations\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" />
+    <PackageReference Include="Microsoft.IO.RecyclableMemoryStream" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore"/>
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL"/>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design"/>
+  </ItemGroup>
+
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>

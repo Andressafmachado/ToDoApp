@@ -8,15 +8,30 @@
 
   <ItemGroup>
     <PackageReference Include="MediatR" />
-    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Hosting" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" />
+    <PackageReference Include="Swashbuckle.AspNetCore" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" />
+      
+            <!--      Fluent Validation -->
+      <PackageReference Include="FluentValidation" />
+      <PackageReference Include="FluentValidation.DependencyInjectionExtensions" />
+      <PackageReference Include="SharpGrip.FluentValidation.AutoValidation.Mvc" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\MyToDoApp.Application\MyToDoApp.Application.csproj" />
+    <ProjectReference Include="..\MyToDoApp.Infrastructure\MyToDoApp.Infrastructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer"/>
+    <Folder Include="Swagger\" />
   </ItemGroup>
 
 </Project>

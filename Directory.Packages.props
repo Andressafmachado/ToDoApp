@@ -10,11 +10,16 @@
     <!-- Fluent Validation -->
     <PackageVersion Include="FluentValidation" Version="11.11.0" />
     <PackageVersion Include="FluentValidation.DependencyInjectionExtensions" Version="11.11.0" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore" Version="9.0.4" />
+    <PackageVersion Include="Microsoft.Extensions.Hosting" Version="9.0.4" />
+    <PackageVersion Include="Microsoft.Extensions.Hosting.Abstractions" Version="9.0.4" />
+    <PackageVersion Include="Microsoft.IO.RecyclableMemoryStream" Version="3.0.1" />
     <PackageVersion Include="SharpGrip.FluentValidation.AutoValidation.Mvc" Version="1.1.0" />
     <!-- Mediator -->
     <PackageVersion Include="MediatR" Version="12.4.1" />
     <!-- Microsoft -->
-    <PackageVersion Include="Microsoft.EntityFrameworkCore.Relational" Version="$(MicrosoftPackagesVersion)" />
+    <PackageVersion Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.1.0" />
+    <PackageVersion Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="5.1.0" />
     <PackageVersion Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="$(MicrosoftPackagesVersion)" />
     <PackageVersion Include="EntityFrameworkCore.Exceptions.PostgreSQL" Version="8.1.3" />
     <PackageVersion Include="Microsoft.EntityFrameworkCore.Design" Version="$(MicrosoftPackagesVersion)">
@@ -28,16 +33,12 @@
     <PackageVersion Include="Serilog.Enrichers.Process" Version="3.0.0" />
     <PackageVersion Include="Serilog.Enrichers.Thread" Version="4.0.0" />
     <PackageVersion Include="Serilog.Sinks.Async" Version="2.1.0" />
-    <!-- System based -->
-    <PackageVersion Include="System.IdentityModel.Tokens.Jwt" Version="8.2.1" />
-    <PackageVersion Include="System.IO.Compression.ZipFile" Version="4.3.0" />
-    <PackageVersion Include="System.IO.Pipelines" Version="$(MicrosoftPackagesVersion)" />
     <!-- Swagger -->
     <PackageVersion Include="Swashbuckle.AspNetCore" Version="7.0.0" />
     <PackageVersion Include="Swashbuckle.AspNetCore.Filters" Version="8.0.2" />
     <!-- Utilities -->
     <PackageVersion Include="EFCoreSecondLevelCacheInterceptor" Version="5.2.1" />
-	<PackageVersion Include="EFCoreSecondLevelCacheInterceptor.EasyCaching.Core" Version="5.2.1" />
+    <PackageVersion Include="EFCoreSecondLevelCacheInterceptor.EasyCaching.Core" Version="5.2.1" />
     <PackageVersion Include="LinqKit" Version="1.3.6" />
   </ItemGroup>
   <!-- Analyzers -->
