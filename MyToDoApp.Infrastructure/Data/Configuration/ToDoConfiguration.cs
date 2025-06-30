@@ -7,6 +7,9 @@ internal sealed class ToDoConfiguration : IEntityTypeConfiguration<ToDoEntity>
 {
 	public void Configure(EntityTypeBuilder<ToDoEntity> builder)
 	{
+		
+		builder.HasQueryFilter(lesson => lesson.DeletedAt == null);
+
 		builder.HasKey(toDo => toDo.Id);
 		builder.Property(toDo => toDo.Title).IsRequired();
 		builder.Property(toDo => toDo.Description).IsRequired();

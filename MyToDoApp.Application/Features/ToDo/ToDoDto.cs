@@ -1,10 +1,10 @@
 namespace MyToDoApp.Application.Features.ToDo;
 
-public readonly record struct ToDoDTO(int Id, string Description, string Title, int Priority, int? ParentToDoId, string Auth0UserId, List<ToDoDTO>? SubTodos)
+public readonly record struct ToDoDto(int Id, string Description, string Title, int Priority, int? ParentToDoId, string Auth0UserId, List<ToDoDto>? SubTodos)
 {
-	public static ToDoDTO Map(ToDoEntity entity)
+	public static ToDoDto Map(ToDoEntity entity)
     {
-        return new(entity.Id,
+        return new ToDoDto(entity.Id,
             entity.Description,
             entity.Title,
             entity.Priority,

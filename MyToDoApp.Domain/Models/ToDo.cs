@@ -19,6 +19,24 @@ public class ToDo : EntityBase<int>
     public int Priority { get; private set; }
     public int? ParentToDoId { get; private set; }
     public string Auth0UserId { get; private set; }
-    public ToDoEntity? ParentToDo { get; private set; }
+    public ToDoEntity? ParentToDo { get; }
     public List<ToDoEntity>? SubTodos { get; private set; } = [];
+
+    public void Update(
+        string title,
+        string description,
+        int priority,
+        int? parentToDoId,
+        IEnumerable<ToDoEntity> subToDos
+    )
+    {
+        ArgumentException.ThrowIfNullOrWhiteSpace(title);
+        ArgumentException.ThrowIfNullOrWhiteSpace(description);
+
+        Title = title;
+        Description = description;
+        Priority = priority;
+        ParentToDoId = parentToDoId;
+        SubTodos = subToDos.ToList();
+    }
 }

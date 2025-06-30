@@ -9,11 +9,11 @@ public readonly record struct CreateToDoCommand(
 	int Priority,
 	int? ParentToDoId,
 	string Auth0UserId
-	) : IRequest<ToDoDTO>;
+	) : IRequest<ToDoDto>;
 
-internal sealed class CreateLessonCommandHandler(IToDoDbContext dbContext) : IRequestHandler<CreateToDoCommand, ToDoDTO>
+internal sealed class CreateLessonCommandHandler(IToDoDbContext dbContext) : IRequestHandler<CreateToDoCommand, ToDoDto>
 {
-	public async Task<ToDoDTO> Handle(CreateToDoCommand request, CancellationToken cancellationToken)
+	public async Task<ToDoDto> Handle(CreateToDoCommand request, CancellationToken cancellationToken)
 	{
 		var item = new ToDoEntity(
 			request.Title,
@@ -26,6 +26,6 @@ internal sealed class CreateLessonCommandHandler(IToDoDbContext dbContext) : IRe
 		await dbContext.ToDos.AddAsync(item, cancellationToken);
 		await dbContext.SaveChangesAsync(cancellationToken);
 
-		return ToDoDTO.Map(item);
+		return ToDoDto.Map(item);
 	}
 }
