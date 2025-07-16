@@ -19,7 +19,7 @@ public record UpdateToDoDto(
 
 public record UpdateToDoCommand(int ToDoId, UpdateToDoDto ToDoDto) : IRequest<ToDoDto>;
 
-internal sealed class UpdateToDoCommandHandler(IToDoDbContext dbContext, IValidator<ToDoEntity> validator) : IRequestHandler<UpdateToDoCommand, ToDoDto>
+internal sealed class UpdateToDoCommandHandler(IToDoDbContext dbContext) : IRequestHandler<UpdateToDoCommand, ToDoDto>
 {
 	public async Task<ToDoDto> Handle(UpdateToDoCommand request, CancellationToken cancellationToken)
 	{
@@ -34,7 +34,7 @@ internal sealed class UpdateToDoCommandHandler(IToDoDbContext dbContext, IValida
 		
 		ValidateToDo(request, toDo);
 		
-		await ApplyLessonChangesAsync(toDo, request.ToDoDto, cancellationToken);
+		// await ApplyToDoChangesAsync(toDo, request.ToDoDto, cancellationToken);
 		
 		//await mediator.Publish(new LessonUpdatedNotification(toDo), cancellationToken);
 		
@@ -48,20 +48,30 @@ internal sealed class UpdateToDoCommandHandler(IToDoDbContext dbContext, IValida
 		
 	}
 	
-	private async Task ApplyLessonChangesAsync(ToDoEntity toDoEntity, UpdateToDoDto toDoDto,
-		CancellationToken cancellationToken)
-	{
-		toDoEntity.Update(
-			title: toDoDto.Title,
-			description: toDoDto.Description,
-			priority: toDoDto.Priority,
-			parentToDoId: toDoDto.ParentToDoId,
-			subToDos: [] //how to map? can i use the same DTO.map
-		);
-		
-		await validator.ValidateAndThrowAsync(toDoEntity, cancellationToken);
-		dbContext.ToDos.Update(toDoEntity);
-
-		await dbContext.SaveChangesAsync(cancellationToken);
-	}
+	// private async Task ApplyToDoChangesAsync(ToDoEntity toDoEntity, UpdateToDoDto toDoDto,
+	// 	CancellationToken cancellationToken)
+	// {
+	// 	// var toDo = await _dbContext.ToDos
+	// 	// 	.Include(t => t.SubTodos)
+	// 	// 	.FirstOrDefaultAsync(t => t.Id == id);
+	// 	// if (toDo == null) throw new NotFoundException();
+	// 	// var subTodos = await _dbContext.ToDos
+	// 	// 	.Where(t => dto.SubTodosIds.Contains(t.Id))
+	// 	// 	.ToListAsync();
+	// 	// toDo.Update(dto.Title, dto.Description, dto.Priority, dto.ParentToDoId, subTodos);
+	// 	// await _dbContext.SaveChangesAsync();
+	// 	
+	// 	
+	// 	
+	// 	
+	// 	// var toDo = await dbContext.ToDos
+	// 	// 	.Include(t => t.SubTodos)
+	// 	// 	.FirstOrDefaultAsync(t => t.Id == toDoDto);
+	// 	// //if (toDo == null) throw new NotFoundException();
+	// 	// var subTodos = await dbContext.ToDos
+	// 	// 	.Where(t => toDoDto.SubTodosIds.Contains(t.Id))
+	// 	// 	.ToListAsync();
+	// 	// toDo.Update(dto.Title, dto.Description, dto.Priority, dto.ParentToDoId, subTodos);
+	// 	// await _dbContext.SaveChangesAsync();
+	// }
 }

@@ -21,6 +21,7 @@ public class ToDo : EntityBase<int>
     public string Auth0UserId { get; private set; }
     public ToDoEntity? ParentToDo { get; }
     public List<ToDoEntity>? SubTodos { get; private set; } = [];
+    public List<int>? SubTodosIds { get; private set; } = [];
 
     public void Update(
         string title,

@@ -197,3 +197,11 @@
 /Users/andressamachado/Desktop/repos/MyToDoApp/MyToDoApp.API/bin/Debug/net9.0/FluentValidation.DependencyInjectionExtensions.dll
 /Users/andressamachado/Desktop/repos/MyToDoApp/MyToDoApp.API/bin/Debug/net9.0/SharpGrip.FluentValidation.AutoValidation.Mvc.dll
 /Users/andressamachado/Desktop/repos/MyToDoApp/MyToDoApp.API/bin/Debug/net9.0/SharpGrip.FluentValidation.AutoValidation.Shared.dll
+/Users/andressamachado/Desktop/repos/MyToDoApp/MyToDoApp.API/bin/Debug/net9.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/andressamachado/Desktop/repos/MyToDoApp/MyToDoApp.API/bin/Debug/net9.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/andressamachado/Desktop/repos/MyToDoApp/MyToDoApp.API/bin/Debug/net9.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/andressamachado/Desktop/repos/MyToDoApp/MyToDoApp.API/bin/Debug/net9.0/Microsoft.IdentityModel.Logging.dll
+/Users/andressamachado/Desktop/repos/MyToDoApp/MyToDoApp.API/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.dll
+/Users/andressamachado/Desktop/repos/MyToDoApp/MyToDoApp.API/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/andressamachado/Desktop/repos/MyToDoApp/MyToDoApp.API/bin/Debug/net9.0/Microsoft.IdentityModel.Tokens.dll
+/Users/andressamachado/Desktop/repos/MyToDoApp/MyToDoApp.API/bin/Debug/net9.0/System.IdentityModel.Tokens.Jwt.dll
