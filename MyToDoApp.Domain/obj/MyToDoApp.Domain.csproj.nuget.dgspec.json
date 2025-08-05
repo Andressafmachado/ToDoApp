@@ -22,7 +22,7 @@
           "net9.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {}
+          "https://aihr-nuget-530871628865.d.codeartifact.eu-west-3.amazonaws.com/nuget/AIHR.NuGet/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {

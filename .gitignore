@@ -3,6 +3,14 @@
 ##
 ## Get latest from `dotnet new gitignore`
 
+# Build artifacts
+*.dll
+*.exe
+*.pdb
+*.cache
+*.log
+
+
 # dotenv files
 .env
 

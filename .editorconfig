@@ -1,0 +1,328 @@
+[*.{appxmanifest,axml,build,config,csproj,dbml,discomap,dtd,jsproj,lsproj,njsproj,nuspec,proj,props,proto,resw,resx,StyleCop,targets,tasks,vbproj,xml,xsd}]
+indent_style = tab
+indent_size = tab
+tab_width = 4
+
+[*.{asax,ascx,aspx,axaml,cs,cshtml,css,htm,html,js,jsx,master,paml,razor,skin,ts,tsx,vb,xaml,xamlx,xoml}]
+indent_style = tab
+indent_size = 4
+tab_width = 4
+
+[*.{json,resjson}]
+indent_style = tab
+indent_size = 2
+tab_width = 2
+
+[*]
+
+# Microsoft .NET properties
+csharp_new_line_before_members_in_object_initializers = false
+csharp_preferred_modifier_order = public, private, protected, internal, new, static, abstract, virtual, sealed, readonly, override, extern, unsafe, volatile, async, required, file:suggestion
+csharp_space_after_cast = true
+csharp_style_prefer_utf8_string_literals = true:suggestion
+csharp_style_var_elsewhere = false:none
+csharp_style_var_for_built_in_types = false:suggestion
+dotnet_naming_rule.unity_serialized_field_rule.import_to_resharper = True
+dotnet_naming_rule.unity_serialized_field_rule.resharper_description = Unity serialized field
+dotnet_naming_rule.unity_serialized_field_rule.resharper_guid = 5f0fdb63-c892-4d2c-9324-15c80b22a7ef
+dotnet_naming_rule.unity_serialized_field_rule.severity = warning
+dotnet_naming_rule.unity_serialized_field_rule.style = lower_camel_case_style
+dotnet_naming_rule.unity_serialized_field_rule.symbols = unity_serialized_field_symbols
+dotnet_naming_rule.unity_serialized_field_rule_1.import_to_resharper = True
+dotnet_naming_rule.unity_serialized_field_rule_1.resharper_description = Unity serialized field
+dotnet_naming_rule.unity_serialized_field_rule_1.resharper_guid = 5f0fdb63-c892-4d2c-9324-15c80b22a7ef
+dotnet_naming_rule.unity_serialized_field_rule_1.severity = warning
+dotnet_naming_rule.unity_serialized_field_rule_1.style = lower_camel_case_style
+dotnet_naming_rule.unity_serialized_field_rule_1.symbols = unity_serialized_field_symbols_1
+dotnet_naming_rule.unity_serialized_field_rule_2.import_to_resharper = True
+dotnet_naming_rule.unity_serialized_field_rule_2.resharper_description = Unity serialized field
+dotnet_naming_rule.unity_serialized_field_rule_2.resharper_guid = 5f0fdb63-c892-4d2c-9324-15c80b22a7ef
+dotnet_naming_rule.unity_serialized_field_rule_2.severity = warning
+dotnet_naming_rule.unity_serialized_field_rule_2.style = lower_camel_case_style
+dotnet_naming_rule.unity_serialized_field_rule_2.symbols = unity_serialized_field_symbols_2
+dotnet_naming_style.lower_camel_case_style.capitalization = camel_case
+dotnet_naming_symbols.unity_serialized_field_symbols.applicable_accessibilities = *
+dotnet_naming_symbols.unity_serialized_field_symbols.applicable_kinds =
+dotnet_naming_symbols.unity_serialized_field_symbols.resharper_applicable_kinds = unity_serialised_field
+dotnet_naming_symbols.unity_serialized_field_symbols.resharper_required_modifiers = instance
+dotnet_naming_symbols.unity_serialized_field_symbols_1.applicable_accessibilities = *
+dotnet_naming_symbols.unity_serialized_field_symbols_1.applicable_kinds =
+dotnet_naming_symbols.unity_serialized_field_symbols_1.resharper_applicable_kinds = unity_serialised_field
+dotnet_naming_symbols.unity_serialized_field_symbols_1.resharper_required_modifiers = instance
+dotnet_naming_symbols.unity_serialized_field_symbols_2.applicable_accessibilities = *
+dotnet_naming_symbols.unity_serialized_field_symbols_2.applicable_kinds =
+dotnet_naming_symbols.unity_serialized_field_symbols_2.resharper_applicable_kinds = unity_serialised_field
+dotnet_naming_symbols.unity_serialized_field_symbols_2.resharper_required_modifiers = instance
+dotnet_style_parentheses_in_arithmetic_binary_operators = never_if_unnecessary:none
+dotnet_style_parentheses_in_other_binary_operators = never_if_unnecessary:none
+dotnet_style_parentheses_in_relational_binary_operators = never_if_unnecessary:none
+dotnet_style_predefined_type_for_locals_parameters_members = true:suggestion
+dotnet_style_predefined_type_for_member_access = true:suggestion
+dotnet_style_qualification_for_event = false:suggestion
+dotnet_style_qualification_for_field = false:suggestion
+dotnet_style_qualification_for_method = false:suggestion
+dotnet_style_qualification_for_property = false:suggestion
+dotnet_style_require_accessibility_modifiers = for_non_interface_members:suggestion
+
+# ReSharper properties
+resharper_arguments_literal = named
+resharper_arguments_skip_single = true
+resharper_autodetect_indent_settings = true
+resharper_blank_lines_before_control_transfer_statements = 1
+resharper_braces_for_for = required
+resharper_braces_for_foreach = required
+resharper_braces_for_ifelse = required
+resharper_braces_for_while = required
+resharper_braces_redundant = false
+resharper_csharp_max_line_length = 129
+resharper_formatter_off_tag = @formatter:off
+resharper_formatter_on_tag = @formatter:on
+resharper_formatter_tags_enabled = true
+resharper_for_built_in_types = use_var_when_evident
+resharper_for_other_types = use_var_when_evident
+resharper_keep_existing_embedded_block_arrangement = true
+resharper_object_creation_when_type_not_evident = target_typed
+resharper_place_simple_anonymousmethod_on_single_line = false
+resharper_place_simple_initializer_on_single_line = false
+resharper_space_within_single_line_array_initializer_braces = false
+resharper_use_indent_from_vs = false
+resharper_wrap_object_and_collection_initializer_style = chop_always
+
+# ReSharper inspection severities
+resharper_arrange_accessor_owner_body_highlighting = none
+resharper_arrange_constructor_or_destructor_body_highlighting = suggestion
+resharper_arrange_redundant_parentheses_highlighting = hint
+resharper_arrange_this_qualifier_highlighting = hint
+resharper_arrange_type_member_modifiers_highlighting = hint
+resharper_arrange_type_modifiers_highlighting = hint
+resharper_built_in_type_reference_style_for_member_access_highlighting = hint
+resharper_built_in_type_reference_style_highlighting = hint
+resharper_mvc_action_not_resolved_highlighting = none
+resharper_mvc_view_not_resolved_highlighting = none
+resharper_redundant_base_qualifier_highlighting = warning
+resharper_suggest_var_or_type_built_in_types_highlighting = hint
+csharp_using_directive_placement = outside_namespace:silent
+csharp_prefer_simple_using_statement = true:suggestion
+csharp_style_namespace_declarations = file_scoped:none
+csharp_style_prefer_method_group_conversion = true:silent
+csharp_style_expression_bodied_constructors = false:suggestion
+csharp_style_expression_bodied_operators = false:silent
+csharp_style_expression_bodied_indexers = true:silent
+csharp_style_expression_bodied_lambdas = true:silent
+csharp_style_expression_bodied_local_functions = false:silent
+csharp_style_throw_expression = true:suggestion
+csharp_indent_labels = one_less_than_current
+csharp_style_prefer_null_check_over_type_check = true:suggestion
+csharp_style_implicit_object_creation_when_type_is_apparent = true:error
+csharp_style_prefer_not_pattern = true:suggestion
+csharp_style_var_when_type_is_apparent = true:none
+csharp_style_allow_embedded_statements_on_same_line_experimental = true:silent
+csharp_style_allow_blank_lines_between_consecutive_braces_experimental = true:silent
+csharp_style_allow_blank_line_after_colon_in_constructor_initializer_experimental = true:silent
+csharp_space_around_binary_operators = before_and_after
+csharp_prefer_simple_default_expression = true:suggestion
+csharp_style_prefer_local_over_anonymous_function = true:suggestion
+csharp_style_prefer_index_operator = true:suggestion
+csharp_style_prefer_range_operator = true:suggestion
+csharp_style_prefer_tuple_swap = true:suggestion
+csharp_style_inlined_variable_declaration = true:suggestion
+csharp_style_deconstructed_variable_declaration = true:suggestion
+csharp_style_unused_value_assignment_preference = discard_variable:suggestion
+csharp_style_unused_value_expression_statement_preference = discard_variable:silent
+csharp_style_prefer_switch_expression = true:suggestion
+csharp_style_prefer_pattern_matching = true:silent
+csharp_style_pattern_matching_over_is_with_cast_check = true:suggestion
+csharp_style_pattern_matching_over_as_with_null_check = true:suggestion
+csharp_style_prefer_extended_property_pattern = true:suggestion
+dotnet_diagnostic.ma0007.severity = silent
+resharper_web_config_module_not_resolved_highlighting = warning
+resharper_web_config_type_not_resolved_highlighting = warning
+resharper_web_config_wrong_module_highlighting = warning
+charset = utf-8
+end_of_line = lf
+trim_trailing_whitespace = false
+insert_final_newline = false
+indent_style = tab
+indent_size = 4
+
+[*.{cs,vb}]
+#### Naming styles ####
+
+# Naming rules
+
+dotnet_naming_rule.interface_should_be_begins_with_i.severity = suggestion
+dotnet_naming_rule.interface_should_be_begins_with_i.symbols = interface
+dotnet_naming_rule.interface_should_be_begins_with_i.style = begins_with_i
+
+dotnet_naming_rule.types_should_be_pascal_case.severity = suggestion
+dotnet_naming_rule.types_should_be_pascal_case.symbols = types
+dotnet_naming_rule.types_should_be_pascal_case.style = pascal_case
+
+dotnet_naming_rule.non_field_members_should_be_pascal_case.severity = suggestion
+dotnet_naming_rule.non_field_members_should_be_pascal_case.symbols = non_field_members
+dotnet_naming_rule.non_field_members_should_be_pascal_case.style = pascal_case
+
+# Symbol specifications
+
+dotnet_naming_symbols.interface.applicable_kinds = interface
+dotnet_naming_symbols.interface.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
+dotnet_naming_symbols.interface.required_modifiers =
+
+dotnet_naming_symbols.types.applicable_kinds = class, struct, interface, enum
+dotnet_naming_symbols.types.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
+dotnet_naming_symbols.types.required_modifiers =
+
+dotnet_naming_symbols.non_field_members.applicable_kinds = property, event, method
+dotnet_naming_symbols.non_field_members.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
+dotnet_naming_symbols.non_field_members.required_modifiers =
+
+# Naming styles
+
+dotnet_naming_style.begins_with_i.required_prefix = I
+dotnet_naming_style.begins_with_i.required_suffix =
+dotnet_naming_style.begins_with_i.word_separator =
+dotnet_naming_style.begins_with_i.capitalization = pascal_case
+
+dotnet_naming_style.pascal_case.required_prefix =
+dotnet_naming_style.pascal_case.required_suffix =
+dotnet_naming_style.pascal_case.word_separator =
+dotnet_naming_style.pascal_case.capitalization = pascal_case
+
+dotnet_naming_style.pascal_case.required_prefix =
+dotnet_naming_style.pascal_case.required_suffix =
+dotnet_naming_style.pascal_case.word_separator =
+dotnet_naming_style.pascal_case.capitalization = pascal_case
+dotnet_style_coalesce_expression = true:suggestion
+dotnet_style_null_propagation = true:suggestion
+dotnet_style_prefer_is_null_check_over_reference_equality_method = true:suggestion
+dotnet_style_prefer_auto_properties = true:silent
+dotnet_style_object_initializer = true:suggestion
+dotnet_style_collection_initializer = true:suggestion
+dotnet_style_prefer_simplified_boolean_expressions = true:suggestion
+dotnet_style_prefer_conditional_expression_over_assignment = true:silent
+dotnet_style_prefer_conditional_expression_over_return = true:silent
+dotnet_style_explicit_tuple_names = true:suggestion
+dotnet_style_prefer_inferred_tuple_names = true:suggestion
+dotnet_style_prefer_inferred_anonymous_type_member_names = true:suggestion
+dotnet_style_prefer_compound_assignment = true:suggestion
+dotnet_style_prefer_simplified_interpolation = true:suggestion
+dotnet_style_namespace_match_folder = true:suggestion
+dotnet_style_operator_placement_when_wrapping = beginning_of_line
+end_of_line = crlf
+dotnet_style_allow_multiple_blank_lines_experimental = true:silent
+dotnet_style_allow_statement_immediately_after_block_experimental = true:silent
+
+
+# AsyncFixer01: Unnecessary async/await usage
+dotnet_diagnostic.asyncfixer01.severity = none
+
+# AsyncFixer02: Long-running or blocking operations inside an async method
+dotnet_diagnostic.asyncfixer02.severity = error
+
+# VSTHRD103: Call async methods when in an async method
+dotnet_diagnostic.vsthrd103.severity = error
+
+# AsyncFixer03: Fire & forget async void methods
+dotnet_diagnostic.asyncfixer03.severity = error
+
+# VSTHRD100: Avoid async void methods
+dotnet_diagnostic.vsthrd100.severity = error
+
+# VSTHRD101: Avoid unsupported async delegates
+dotnet_diagnostic.vsthrd101.severity = error
+
+# VSTHRD107: Await Task within using expression
+dotnet_diagnostic.vsthrd107.severity = error
+
+# AsyncFixer04: Fire & forget async call inside a using block
+dotnet_diagnostic.asyncfixer04.severity = error
+
+# VSTHRD110: Observe result of async calls
+dotnet_diagnostic.vsthrd110.severity = error
+
+# VSTHRD002: Avoid problematic synchronous waits
+dotnet_diagnostic.vsthrd002.severity = error
+
+# MA0045: Do not use blocking call (make method async)
+dotnet_diagnostic.ma0045.severity = error
+
+# AsyncifyInvocation: Use Task Async
+dotnet_diagnostic.asyncifyinvocation.severity = error
+
+# AsyncifyVariable: Use Task Async
+dotnet_diagnostic.asyncifyvariable.severity = error
+
+# MA0004: Use .ConfigureAwait(false)
+dotnet_diagnostic.ma0004.severity = none
+
+# VSTHRD111: Use ConfigureAwait(bool)
+dotnet_diagnostic.vsthrd111.severity = none
+
+# CA2007: Consider calling ConfigureAwait on the awaited task
+dotnet_diagnostic.ca2007.severity = none
+
+# MA0022: Return Task.FromResult instead of returning null
+dotnet_diagnostic.ma0022.severity = error
+
+# VSTHRD114: Avoid returning a null Task
+dotnet_diagnostic.vsthrd114.severity = error
+
+# VSTHRD200: Use "Async" suffix for async methods
+dotnet_diagnostic.vsthrd200.severity = error
+
+# MA0040: Specify a cancellation token
+dotnet_diagnostic.ma0032.severity = suggestion
+
+# MA0040: Flow the cancellation token when available
+dotnet_diagnostic.ma0040.severity = error
+
+# MA0079: Use a cancellation token using .WithCancellation()
+dotnet_diagnostic.ma0079.severity = suggestion
+
+# MA0080: Use a cancellation token using .WithCancellation()
+dotnet_diagnostic.ma0080.severity = error
+
+#AsyncFixer05: Downcasting from a nested task to an outer task.
+dotnet_diagnostic.asyncfixer05.severity = error
+
+ma0011.exclude_tostring_methods = true
+ma0011.exclude_tostring_methods = true
+dotnet_diagnostic.ma0026.severity = none
+dotnet_diagnostic.ma0048.severity = suggestion
+dotnet_diagnostic.ma0051.severity = none
+dotnet_diagnostic.ex001.severity = none
+dotnet_diagnostic.ex002.severity = none
+dotnet_diagnostic.ex003.severity = none
+dotnet_diagnostic.ex005.severity = none
+dotnet_diagnostic.ex006.severity = none
+dotnet_diagnostic.ide0090.severity = none
+dotnet_diagnostic.vsthrd200.severity = none
+dotnet_diagnostic.ma0011.severity = none
+dotnet_diagnostic.ma0015.severity = none
+dotnet_diagnostic.ma0016.severity = none
+dotnet_diagnostic.ma0049.severity = none
+dotnet_diagnostic.hlq010.severity = none
+dotnet_diagnostic.hlq003.severity = none
+dotnet_style_readonly_field = true:suggestion
+
+[*.{appxmanifest,asax,ascx,aspx,axaml,build,c,c++,cc,cginc,compute,cp,cpp,cs,cshtml,cu,cuh,cxx,dtd,fs,fsi,fsscript,fsx,fx,fxh,h,hh,hlsl,hlsli,hlslinc,hpp,hxx,inc,inl,ino,ipp,master,ml,mli,mpp,mq4,mq5,mqh,nuspec,paml,razor,resw,resx,shader,skin,tpp,usf,ush,vb,xaml,xamlx,xoml,xsd}]
+indent_style = tab
+indent_size = 4
+tab_width = 4
+
+[*.{appxmanifest,asax,ascx,aspx,axaml,build,c,c++,cc,cginc,compute,cp,cpp,cppm,cs,cshtml,cu,cuh,cxx,dtd,feature,fs,fsi,fsscript,fsx,fx,fxh,h,hh,hlsl,hlsli,hlslinc,hpp,hxx,inc,inl,ino,ipp,ixx,master,ml,mli,mpp,mq4,mq5,mqh,nuspec,paml,razor,resw,resx,shader,skin,tpp,usf,ush,vb,xaml,xamlx,xoml,xsd}]
+indent_style = tab
+indent_size = 4
+tab_width = 4
+
+[{*.har,*.jsb2,*.jsb3,*.json,.babelrc,.eslintrc,.prettierrc,.stylelintrc,bowerrc,jest.config}]
+indent_style = tab
+indent_size = 2
+
+[{*.yaml,*.yml}]
+indent_style = tab
+indent_size = 2
+
+[{*.http,*.rest}]
+indent_style = tab
+indent_size = 0
