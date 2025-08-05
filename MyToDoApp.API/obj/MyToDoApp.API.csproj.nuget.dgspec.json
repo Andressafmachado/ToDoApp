@@ -22,7 +22,7 @@
           "net9.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {}
+          "https://aihr-nuget-530871628865.d.codeartifact.eu-west-3.amazonaws.com/nuget/AIHR.NuGet/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
@@ -67,6 +67,11 @@
             "MediatR": {
               "target": "Package",
               "version": "[12.4.1, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[9.0.7, )",
               "versionCentrallyManaged": true
             },
             "Microsoft.AspNetCore.Mvc.Versioning": {
@@ -197,7 +202,7 @@
           "net9.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {}
+          "https://aihr-nuget-530871628865.d.codeartifact.eu-west-3.amazonaws.com/nuget/AIHR.NuGet/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
@@ -334,7 +339,7 @@
           "net9.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {}
+          "https://aihr-nuget-530871628865.d.codeartifact.eu-west-3.amazonaws.com/nuget/AIHR.NuGet/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
@@ -440,7 +445,7 @@
           "net9.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {}
+          "https://aihr-nuget-530871628865.d.codeartifact.eu-west-3.amazonaws.com/nuget/AIHR.NuGet/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {

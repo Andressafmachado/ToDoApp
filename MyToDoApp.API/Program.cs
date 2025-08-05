@@ -10,7 +10,6 @@ var builder = WebApplication.CreateSlimBuilder(args);
 builder.Host.UseDefaultServiceProvider(opt => opt.ValidateScopes = true);
 
 // -> The order of adding Options is important. Don't move it. <-
-
 builder.Services
 	.AddApplication(builder.Configuration)
 	.AddInfrastructure(builder.Configuration, builder.Environment)
@@ -27,8 +26,8 @@ if (!app.Environment.IsProduction())
 }
 
 // app.UseCors("AIHR");
-//app.UseAuthorization();
-
+app.UseAuthentication();
+app.UseAuthorization();
 app.MapControllers();
 
 // app.MapHealthChecks("/health/ready", new()

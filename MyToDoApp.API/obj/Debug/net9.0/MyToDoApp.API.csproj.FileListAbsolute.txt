@@ -205,3 +205,5 @@
 /Users/andressamachado/Desktop/repos/MyToDoApp/MyToDoApp.API/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 /Users/andressamachado/Desktop/repos/MyToDoApp/MyToDoApp.API/bin/Debug/net9.0/Microsoft.IdentityModel.Tokens.dll
 /Users/andressamachado/Desktop/repos/MyToDoApp/MyToDoApp.API/bin/Debug/net9.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/andressamachado/Desktop/repos/MyToDoApp/MyToDoApp.API/bin/Debug/net9.0/MyToDoApp.API.xml
+/Users/andressamachado/Desktop/repos/MyToDoApp/MyToDoApp.API/obj/Debug/net9.0/MyToDoApp.API.xml

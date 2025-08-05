@@ -5,48 +5,48 @@ namespace MyToDoApp.API.Extensions.ServiceCollection;
 
 internal static partial class ServiceCollectionExtensions
 {
-	// ReSharper disable once UnusedMethodReturnValue.Local
-	private static void AddToDoSwagger(this IServiceCollection services, IConfiguration configuration)
-	{
-		services.AddSwaggerGen(options =>
-		{
-			// Docs & Examples
-			
-			options.SwaggerDoc("v1", new()
-			{
-				Title = "TODO API",
-				Version = "v1"
-			});
+    private static void AddToDoSwagger(this IServiceCollection services, IConfiguration configuration)
+    {
+        services.AddSwaggerGen(options =>
+        {
+            // Define Swagger doc
+            options.SwaggerDoc("v1", new OpenApiInfo
+            {
+                Title = "TODO API",
+                Version = "v1"
+            });
 
-			var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
-			string xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
-			//options.IncludeXmlComments(xmlPath);
+            // Optional: Include XML comments (for method/documentation tooltips)
+            var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml"; // this uses the summary from controller 
+            var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+            // Uncomment this line if XML comments are enabled in your .csproj
+            options.IncludeXmlComments(xmlPath);
 
-			// Bearer token
-			// options.AddSecurityDefinition("Bearer", new()
-			// {
-			// 	Description = "JWT Authorization header using the Bearer scheme. Example: 'Bearer {token}'",
-			// 	Name = "Authorization",
-			// 	In = ParameterLocation.Header,
-			// 	Type = SecuritySchemeType.ApiKey,
-			// 	Scheme = "Bearer"
-			// });
+            // Add JWT Bearer support
+            options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+            {
+                Description = "JWT Authorization header using the Bearer scheme. Example: 'Bearer {token}'",
+                Name = "Authorization",
+                In = ParameterLocation.Header,
+                Type = SecuritySchemeType.Http,
+                Scheme = "bearer", // must be lowercase
+                BearerFormat = "JWT"
+            });
 
-			// options.AddSecurityRequirement(new()
-			// {
-			// 	{
-			// 		new()
-			// 		{
-			// 			Reference = new()
-			// 			{
-			// 				Id = "Bearer",
-			// 				Type = ReferenceType.SecurityScheme
-			// 			}
-			// 		},
-			// 		Array.Empty<string>()
-			// 	}
-			// });
-		
-		});
-	}
+            options.AddSecurityRequirement(new OpenApiSecurityRequirement
+            {
+                {
+                    new OpenApiSecurityScheme
+                    {
+                        Reference = new OpenApiReference
+                        {
+                            Type = ReferenceType.SecurityScheme,
+                            Id = "Bearer"
+                        }
+                    },
+                    Array.Empty<string>()
+                }
+            });
+        });
+    }
 }

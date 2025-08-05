@@ -1,4 +1,5 @@
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using MyToDoApp.Application.Features.ToDo;
 using MyToDoApp.Application.Features.ToDo.Commands;
@@ -10,8 +11,14 @@ namespace MyToDoApp.API.Controllers;
 
 [ApiVersion("1.0")]
 [Route("api/v{version:apiVersion}/[controller]")]
+[Authorize]
 public class ToDoController(IMediator mediator) : ControllerBase
 {
+    /// <summary>
+    /// my comments here
+    /// </summary>
+    /// <param name="cancellationToken"></param>
+    /// <returns></returns>
     [HttpGet]
     [ProducesResponseType(typeof(List<ToDoDto>), StatusCodes.Status200OK)]
     public async Task<IActionResult> GetAllAsync(CancellationToken cancellationToken)

@@ -44,6 +44,7 @@ internal static partial class ServiceCollectionExtensions
 		// Custom services
 		services
 			.AddToDoApiVersioning()
+			.AddAuth0Authorization()
 			.AddCustomGlobalExceptionHandler()
 			.AddToDoSwagger(configuration);
 		//
